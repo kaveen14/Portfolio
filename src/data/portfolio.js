@@ -6,7 +6,7 @@
 
 // ── Personal Info ────────────────────────────────────────────────
 export const personal = {
-  name: 'Kaveenkumar',
+  name: 'Kaveenkumar C',
   initials: 'KV',
   role: '.NET Developer',
   tagline:
@@ -14,8 +14,8 @@ export const personal = {
   availability: 'Available for freelance work',
   profileImage: 'profile.png',
   cv: 'cv.pdf',           // place your CV file in /public/cv.pdf
-  email: 'kaveen@example.com',
-  phone: '+91 98765 43210',
+  email: 'kaveenkumarc@gmail.com',
+  phone: '+91 9629894628',
   location: 'Tamil Nadu, India',
   availabilityStatus: 'Open to work',
 }
@@ -33,10 +33,10 @@ export const navLinks = [
 // ── Social Media Links ───────────────────────────────────────────
 // icon: must match a key in the ICON_MAP inside Sidebar.jsx / Contact.jsx
 export const socialLinks = [
-  { icon: 'github',   label: 'GitHub',   href: 'https://github.com' },
-  { icon: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: 'twitter',  label: 'Twitter',  href: 'https://twitter.com' },
-  { icon: 'mail',     label: 'Email',    href: 'mailto:kaveen@example.com' },
+  { icon: 'github',   label: 'GitHub',   href: 'https://github.com/ksite1' },
+  { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/kaveenkumar-c-206a2b1b1' },
+  { icon: 'twitter',  label: 'Twitter',  href: 'https://x.com/KaveenkumarC' },
+  { icon: 'mail',     label: 'Email',    href: 'mailto:kaveenkumarc@gmail.com' },
 ]
 
 // ── Hero: Floating Tech Badges ───────────────────────────────────
@@ -46,8 +46,8 @@ export const techBadges = ['.NET', 'C#', 'SQL', '</>']
 // ── Hero: Stats Row ──────────────────────────────────────────────
 export const stats = [
   { value: '2+',   label: 'Years Experience' },
-  { value: '12+',  label: 'Projects Completed' },
-  { value: '10+',  label: 'Technologies' },
+  // { value: '12+',  label: 'Projects Completed' },
+  { value: '5+',  label: 'Technologies' },
   { value: '100%', label: 'Client Satisfaction' },
 ]
 
@@ -61,7 +61,7 @@ export const about = {
   infoItems: [
     { label: 'Name',         value: 'Kaveenkumar',         highlight: false },
     { label: 'Location',     value: 'Tamil Nadu, India',    highlight: false },
-    { label: 'Email',        value: 'kaveen@example.com',   highlight: false },
+    { label: 'Email',        value: 'kaveenkumarc@gmail.com',   highlight: false },
     { label: 'Availability', value: 'Open to work',         highlight: true  },
   ],
 }
@@ -178,6 +178,6 @@ export const testimonials = [
 
 // ── Footer ───────────────────────────────────────────────────────
 export const footer = {
-  copyright: '© 2024 Kaveenkumar. All rights reserved.',
-  credit: 'Designed with ♥ using Figma',
+  copyright: '© 2026 Kaveenkumar. All rights reserved.',
+  // credit: 'Designed with ♥ using Figma',
 }
