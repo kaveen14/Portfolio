@@ -12,8 +12,8 @@ export const personal = {
   tagline:
     'I build scalable & high-performance web applications using .NET, SQL and modern technologies.',
   availability: 'Available for freelance work',
-  profileImage: '/profile.png',
-  cv: '/cv.pdf',           // place your CV file in /public/cv.pdf
+  profileImage: 'profile.png',
+  cv: 'cv.pdf',           // place your CV file in /public/cv.pdf
   email: 'kaveen@example.com',
   phone: '+91 98765 43210',
   location: 'Tamil Nadu, India',

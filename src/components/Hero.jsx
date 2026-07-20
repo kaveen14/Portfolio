@@ -121,7 +121,7 @@ export default function Hero() {
                 <div className="absolute inset-0 rounded-full profile-glow" />
                 <div className="absolute inset-8 rounded-full overflow-hidden border-2 border-primary/40 bg-dark-card">
                   <img
-                    src={personal.profileImage}
+                    src={`${import.meta.env.BASE_URL}${personal.profileImage}`}
                     alt={personal.name}
                     className="w-full h-full object-cover object-top"
                   />
