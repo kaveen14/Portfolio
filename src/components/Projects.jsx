@@ -7,10 +7,9 @@ export default function Projects() {
   const [cardsRef,  cardsInView]  = useInView()
 
   return (
-    <section className="py-20 px-6 sm:px-8 lg:px-16 border-t border-dark-border">
+    <section className="py-20 px-6 sm:px-8 lg:px-16 border-t border-[var(--bg-border)]">
       <div className="max-w-6xl mx-auto">
 
-        {/* Section header */}
         <div
           ref={headerRef}
           className={`flex items-end justify-between mb-10 transition-all duration-700 ease-out ${
@@ -18,18 +17,17 @@ export default function Projects() {
           }`}
         >
           <div>
-            <p className="text-primary text-xs font-semibold tracking-widest uppercase mb-2">Featured Projects</p>
-            <h2 className="text-3xl font-black text-white">Some Things I've Built</h2>
+            <p className="text-[var(--color-primary)] text-xs font-semibold tracking-widest uppercase mb-2">Featured Projects</p>
+            <h2 className="text-3xl font-black text-[var(--text-primary)]">Some Things I've Built</h2>
           </div>
           <a
             href="#"
-            className="hidden md:flex items-center gap-1.5 text-xs text-gray-500 border border-dark-border px-4 py-2 rounded-full hover:border-primary/50 hover:text-primary transition-all"
+            className="hidden md:flex items-center gap-1.5 text-xs text-[var(--text-muted)] border border-[var(--bg-border)] px-4 py-2 rounded-full hover:border-[var(--color-primary)]/50 hover:text-[var(--color-primary)] transition-all"
           >
             View All Projects <ArrowUpRight size={13} />
           </a>
         </div>
 
-        {/* Project cards — stagger in */}
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project, i) => (
             <div
@@ -51,32 +49,30 @@ export default function Projects() {
 
 function ProjectCard({ title, description, tags, accentColor, liveLink }) {
   return (
-    <div className="h-full bg-dark-card border border-dark-border rounded-2xl overflow-hidden group hover:border-primary/40 hover:-translate-y-1 transition-all duration-300">
-      {/* Banner */}
-      <div className={`h-40 bg-gradient-to-br ${accentColor} to-dark-card flex items-center justify-center border-b border-dark-border`}>
-        <span className="text-white/20 text-6xl font-black font-mono group-hover:text-primary/30 group-hover:scale-110 transition-all duration-500">
+    <div className="h-full bg-[var(--bg-card)] border border-[var(--bg-border)] rounded-2xl overflow-hidden group hover:border-[var(--color-primary)]/40 magnetic-hover transition-all duration-300 hover-glow">
+      <div className={`h-40 bg-gradient-to-br ${accentColor} to-[var(--bg-card)] flex items-center justify-center border-b border-[var(--bg-border)]`}>
+        <span className="text-6xl font-black font-mono group-hover:scale-110 transition-all duration-500" style={{ color: 'rgba(var(--color-primary-rgb), 0.2)' }}>
           &lt;/&gt;
         </span>
       </div>
 
-      {/* Body */}
       <div className="p-5">
         <div className="flex items-start justify-between mb-2">
-          <h3 className="text-white font-semibold text-sm pr-2">{title}</h3>
+          <h3 className="text-[var(--text-primary)] font-semibold text-sm pr-2">{title}</h3>
           <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Open ${title}`}
-            className="text-gray-600 hover:text-primary hover:scale-110 transition-all shrink-0"
+            className="text-[var(--text-muted)] hover:text-[var(--color-primary)] hover:scale-110 transition-all shrink-0"
           >
             <ArrowUpRight size={16} />
           </a>
         </div>
-        <p className="text-gray-500 text-xs leading-relaxed mb-4">{description}</p>
+        <p className="text-[var(--text-muted)] text-xs leading-relaxed mb-4">{description}</p>
         <div className="flex flex-wrap gap-1.5">
           {tags.map((tag) => (
-            <span key={tag} className="bg-primary/10 text-primary text-xs px-2.5 py-1 rounded-md font-medium hover:bg-primary/20 transition-colors">
+            <span key={tag} className="text-[var(--color-primary)] text-xs px-2.5 py-1 rounded-md font-medium transition-colors" style={{ backgroundColor: 'rgba(var(--color-primary-rgb), 0.1)' }}>
               {tag}
             </span>
           ))}
