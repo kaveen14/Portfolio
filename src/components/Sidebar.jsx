@@ -1,7 +1,6 @@
 import { Github, Linkedin, Twitter, Mail, Home } from 'lucide-react'
 import { socialLinks } from '../data/portfolio'
 
-// Map icon string keys (from portfolio.js) to Lucide components
 const ICON_MAP = {
   github:   Github,
   linkedin: Linkedin,
@@ -11,21 +10,18 @@ const ICON_MAP = {
 
 export default function Sidebar() {
   return (
-    <aside className="fixed left-0 top-0 h-full w-16 z-40 hidden md:flex flex-col items-center pt-24 pb-8 gap-7 border-r border-dark-border bg-dark-bg/80 backdrop-blur-sm">
+    <aside className="fixed left-0 top-0 h-full w-16 z-40 hidden md:flex flex-col items-center pt-24 pb-8 gap-7 border-r border-[var(--bg-border)] bg-[var(--bg-page)]/80 backdrop-blur-sm">
 
-      {/* Home shortcut */}
       <a
         href="#home"
         aria-label="Home"
-        className="text-gray-500 hover:text-primary transition-colors duration-200"
+        className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-all duration-200 hover:scale-110"
       >
         <Home size={18} />
       </a>
 
-      {/* Divider */}
-      <div className="w-px h-6 bg-dark-border" />
+      <div className="w-px h-6 bg-[var(--bg-border)]" />
 
-      {/* Social links from portfolio.js */}
       {socialLinks.map(({ icon, href, label }) => {
         const Icon = ICON_MAP[icon]
         if (!Icon) return null
@@ -36,7 +32,7 @@ export default function Sidebar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="text-gray-500 hover:text-primary transition-colors duration-200"
+            className="text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-all duration-200 hover:scale-110"
           >
             <Icon size={18} />
           </a>
