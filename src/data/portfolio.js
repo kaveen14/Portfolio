@@ -136,25 +136,9 @@ export const experiences = [
     id: 1,
     period: '2023 - Present',
     role: 'Software Developer',
-    company: 'ABC Solutions Pvt. Ltd',
+    company: 'INNOCAP',
     description:
       'Working on client reporting systems, automation, and performance improvements using .NET, SQL, and modern tools.',
-  },
-  {
-    id: 2,
-    period: '2022 - 2023',
-    role: 'Junior Developer',
-    company: 'XYZ Infotech',
-    description:
-      'Developed and maintained web applications and collaborated with cross-functional teams.',
-  },
-  {
-    id: 3,
-    period: '2021 - 2022',
-    role: 'Intern Developer',
-    company: 'Tech Innovations',
-    description:
-      'Worked on various internal projects and gained experience in .NET and SQL.',
   },
 ]
 
@@ -163,16 +147,9 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      'Kaveenkumar is a dedicated developer who delivers high-quality work on time and has deep technical knowledge.',
-    name: 'Ramesh B',
-    role: 'Project Manager, ABC Solutions',
-  },
-  {
-    id: 2,
-    quote:
-      'Excellent problem-solving skills and great communication throughout the project. Highly recommend!',
-    name: 'Priya M',
-    role: 'Tech Lead, XYZ Infotech',
+      'Kaveenkumar is a highly skilled developer who consistently delivers high-quality work. His expertise in .NET and SQL has been invaluable to our projects.',
+    name: 'Award',
+    role: 'Tech Lead, INNOCAP',
   },
 ]
 
