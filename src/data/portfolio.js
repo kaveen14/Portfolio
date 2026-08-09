@@ -8,12 +8,12 @@
 export const personal = {
   name: 'Kaveenkumar C',
   initials: 'KV',
-  role: '.NET Developer',
+  role: 'Full Stack Developer',
   tagline:
     'I build scalable & high-performance web applications using .NET, SQL and modern technologies.',
   availability: 'Available for freelance work',
   profileImage: 'profile.png',
-  cv: 'cv.pdf',           // place your CV file in /public/cv.pdf
+  cv: './Resume/Kaveenkumar-C Resume.pdf',           // place your CV file in /public/cv.pdf
   email: 'kaveenkumarc@gmail.com',
   phone: '+91 9629894628',
   location: 'Tamil Nadu, India',
@@ -26,6 +26,9 @@ export const navLinks = [
   { label: 'About',      href: '#about' },
   { label: 'Skills',     href: '#skills' },
   { label: 'Projects',   href: '#projects' },
+  { label: 'Achievements', href: '#achievements' },
+  { label: 'Courses', href: '#courses' },
+  { label: 'Project Demo', href: '#demos' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact',    href: '#contact' },
 ]
@@ -41,14 +44,14 @@ export const socialLinks = [
 
 // ── Hero: Floating Tech Badges ───────────────────────────────────
 // Change these to the technologies you want to highlight
-export const techBadges = ['.NET', 'C#', 'SQL', '</>']
+export const techBadges = ['.NET', 'C#', 'SQL', 'React JS']//, '</>']
 
 // ── Hero: Stats Row ──────────────────────────────────────────────
 export const stats = [
-  { value: '2+',   label: 'Years Experience' },
+  { value: '3+',   label: 'Years Experience' },
   // { value: '12+',  label: 'Projects Completed' },
   { value: '5+',  label: 'Technologies' },
-  { value: '100%', label: 'Client Satisfaction' },
+  { value: '90%', label: 'Client Satisfaction' },
 ]
 
 // ── About Section ────────────────────────────────────────────────
@@ -113,7 +116,7 @@ export const projects = [
     title: 'Workflow Automation',
     description:
       'Automated reporting workflow using RabbitMQ and Hangfire scheduler.',
-    tags: ['.NET', 'RabbitMQ', 'Hangfire'],
+    tags: ['.NET', 'RabbitMQ', 'Hangfire', 'SQL'],
     accentColor: 'from-purple-900/40',
     liveLink: '#',
     repoLink: '#',
@@ -147,9 +150,74 @@ export const testimonials = [
   {
     id: 1,
     quote:
-      'Kaveenkumar is a highly skilled developer who consistently delivers high-quality work. His expertise in .NET and SQL has been invaluable to our projects.',
-    name: 'Award',
-    role: 'Tech Lead, INNOCAP',
+      'Kaveen is a skilled developer who consistently delivers high-quality work and demonstrates a strong commitment to software development. He takes ownership of his responsibilities, approaches tasks with a positive attitude, and shows good initiative in solving technical challenges. He is also a dependable team member who collaborates well with others and is willing to take on new responsibilities when needed.',
+    name: 'Prabhu',
+    role: 'Senior Manager, INNOCAP',
+  },
+  {
+    id: 2,
+    quote:
+      'Kaveen is a great team player and is passionate about software development. He consistently delivers high-quality work and takes ownership of his responsibilities with a proactive approach. His commitment, technical expertise, and strong knowledge of .NET and SQL have been valuable contributions to our projects. He is dependable, takes initiative, and works effectively with the team to achieve project goals.',
+    name: 'Dinesh',
+    role: 'Lead Software Developer, INNOCAP',
+  }
+]
+
+// ── Courses & Completion Section ──────────────────────────────────
+export const courses = [
+  {
+    id: 1,
+    title: 'Complete .NET Developer Course',
+    provider: 'Udemy',
+    year: 2024,
+    certificate: 'certs/dotnet-complete.pdf', // place file in /public/certs if using
+    description: 'Comprehensive course covering C#, .NET Core, ASP.NET and related tooling.',
+  },
+  {
+    id: 2,
+    title: 'React - The Complete Guide',
+    provider: 'Coursera',
+    year: 2023,
+    certificate: '',
+    description: 'Practical React development including hooks, routing and state management.',
+  },
+]
+
+// ── Achievements & Recognition Section ────────────────────────────
+export const achievements = [
+  {
+    id: 1,
+    title: 'The Endurance Excellence Award',
+    issuer: 'INNOCAP',
+    year: 2026,
+    description: 'Recognized for outstanding delivery on reporting automation and performance improvements.',
+    image: './Achievements/Excellence Award.jpg', // put a path under /public/certs or upload via the site
+  },
+  {
+    id: 2,
+    title: 'The Rising Star Award',
+    issuer: 'INNOCAP',
+    year: 2024,
+    description: 'Awarded for consistent high-quality contributions and teamwork.',
+    image: './Achievements/RisingStarAward.jpg', // put a path under /public/certs or upload via the site
+  },
+]
+
+// ── Demos & GitHub Repos Section ──────────────────────────────────
+export const demos = [
+  {
+    id: 1,
+    title: 'Client Report Dashboard',
+    description: 'Live demo and repository for the reporting dashboard project.',
+    demoLink: '#',
+    repoLink: 'https://github.com/ksite1/client-report-dashboard',
+  },
+  {
+    id: 2,
+    title: 'Workflow Automation',
+    description: 'Automation pipeline using RabbitMQ and Hangfire.',
+    demoLink: '#',
+    repoLink: 'https://github.com/ksite1/workflow-automation',
   },
 ]
 

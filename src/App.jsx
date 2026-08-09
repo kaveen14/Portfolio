@@ -4,6 +4,9 @@ import Hero         from './components/Hero'
 import Services     from './components/Services'
 import About        from './components/About'
 import Projects     from './components/Projects'
+import Achievements from './components/Achievements'
+import Courses      from './components/Courses'
+import Demos        from './components/Demos'
 import Experience   from './components/Experience'
 import Testimonials from './components/Testimonials'
 import Contact      from './components/Contact'
@@ -26,6 +29,12 @@ export default function App() {
         <section id="skills">   <Services /> </section>
         <section id="about">    <About />    </section>
         <section id="projects"> <Projects /> </section>
+
+        <section id="achievements"> <Achievements /> </section>
+
+        <section id="courses"> <Courses /> </section>
+
+        <section id="demos"> <Demos /> </section>
 
         <div
           id="experience"
